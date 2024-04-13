@@ -1,17 +1,14 @@
-<ol class="list-group  list">
-        <ng-container *ngFor="let job of favoriteJobs; let i = index">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <img [src]="job.companyLogo" alt="Logo" class="logo" />
-                        <div class="ms-2 me-auto">
-                                <div class="fw-bold">
-                                        <a [routerLink]="['/job-view', job.id]">{{job.title}}</a>
-                                </div>
-                                <b>company :</b> {{job.companyName}}, <b>Reference :</b> {{job.reference}}
-                        </div>
-
-                </li>
-        </ng-container>
-        <div class="notFound text-center" *ngIf="favoriteJobs?.length === 0">
-                <span>No Favorite Job Selected</span>
+<div class="row list" *ngFor="let job of favoriteJobs; let i = index">
+        <div class="col-sm-1">
+                <img [src]="job.companyLogo" alt="Logo" class="logo" />
         </div>
-</ol>
+        <div class="col-sm-11 title">
+                <div class="fw-bold">
+                        <a [routerLink]="['/job-view', job.id]">{{job.title}}</a>
+                </div>
+                <b>company :</b> {{job.companyName}}, <b>Reference :</b> {{job.reference}}
+        </div>
+</div>
+<div class="notFound" *ngIf="favoriteJobs?.length === 0">
+        <span>Record Not Found</span>
+</div>

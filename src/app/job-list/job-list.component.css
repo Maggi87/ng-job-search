@@ -1,14 +1,10 @@
 .list {
-        padding: 10px;
+        padding-bottom: 10px;
 }
 
 .active {
         color: rgb(193, 207, 6);
         border-color: rgb(20, 20, 19);
-}
-
-.logo {
-        width: 50px;
 }
 
 .icon-star {
@@ -18,4 +14,19 @@
 
 .notFound {
         padding-top: 250px;
+}
+
+.fw-bold {
+        font-size: 22px;
+        color: white;
+        font-weight: bold;
+}
+
+a:visited {
+        color: white;
+        text-decoration: none;
+}
+
+.title {
+        padding-left: 20px;
 }

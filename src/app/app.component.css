@@ -1,8 +1,18 @@
-h2 {
-        padding: 10px;
-}
-
 .header {
         text-align: center;
-        padding: 30px;
+}
+
+.container {
+        width: 61%;
+}
+
+.button {
+        margin: 10px;
+}
+
+.button-group {
+        display: flex;
+        border: none;
+        border-radius: var(--universal-border-radius);
+        margin: var(--universal-margin);
 }
