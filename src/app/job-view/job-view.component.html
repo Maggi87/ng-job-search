@@ -1,0 +1,30 @@
+<div *ngIf="jobDetails">
+        <p>
+                <a (click)="backToHome()"> <i class="fa fa-home" aria-hidden="true"></i> Back</a>
+        </p>
+        <div class="d-flex bd-highlight">
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <img [src]="jobDetails.companyLogo" alt="Logo" class="logo" />
+                </div>
+                <div class="p-2 w-100 bd-highlight">
+                        <h3 class="fw-bold">
+                                {{jobDetails.title}}
+                        </h3>
+                        <span class="badge rounded-pill bg-primary">{{jobDetails.types}}</span>&nbsp;
+                        <span class="badge rounded-pill bg-primary">{{jobDetails.industries}}</span>
+                </div>
+        </div>
+        <p>
+                <span class="text">Published Date : </span>{{ jobDetails.publishDate | date : "M/d/yyyy" }}
+        </p>
+        <p>
+                <span class="text">Location : </span>{{ jobDetails.location }}
+        </p>
+        <p>
+                <span class="text">Reference : </span>{{ jobDetails.reference }}
+        </p>
+        <p>
+                <span class="text">Description : </span>
+        </p>
+        <p [innerHTML]="jobDetails.description"></p>
+</div>

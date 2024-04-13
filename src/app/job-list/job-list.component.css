@@ -1,0 +1,21 @@
+.list {
+        padding: 10px;
+}
+
+.active {
+        color: rgb(193, 207, 6);
+        border-color: rgb(20, 20, 19);
+}
+
+.logo {
+        width: 50px;
+}
+
+.icon-star {
+        cursor: pointer;
+        font-size: 20px;
+}
+
+.notFound {
+        padding-top: 250px;
+}

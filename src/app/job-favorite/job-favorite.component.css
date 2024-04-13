@@ -1,0 +1,19 @@
+.list {
+        padding: 10px;
+}
+
+.active {
+        color: rgb(238, 255, 5);
+}
+
+.logo {
+        width: 50px;
+}
+
+.icon-star {
+        cursor: pointer;
+}
+
+.notFound {
+        padding-top: 250px;
+}
