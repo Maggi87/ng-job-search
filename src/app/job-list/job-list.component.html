@@ -10,7 +10,7 @@
         </div>
         <div class="col-sm-1">
                 <span class="icon-star" id="star-{{job.id}}" (click)="toggleFavorite(job)"
-                        [class.active]="isFavorite(job.id)">&#9733;</span>
+                        [class.active]="isFavorite(job.id)"></span>
         </div>
 </div>
 <div class="notFound text-center" *ngIf="jobs?.length === 0">
